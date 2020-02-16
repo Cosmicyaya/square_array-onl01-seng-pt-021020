@@ -1,5 +1,7 @@
-square_array(number)
-some_array = [1,2,3]
-some_array.each do |number|
-  puts number + 1
+def square_array(array)
+  new_array = []
+  array.each{|a| new_array.push(a*a)}
+  return new_array
 end
+arr = [1,2,3,4,5]
+square_array(arr)
